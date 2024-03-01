@@ -4,30 +4,38 @@ import { FaMoneyBill } from "react-icons/fa";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { ImArrowUp, ImArrowDown } from "react-icons/im";
 import React from "react";
+import Dashboard from "../components/Dashboard";
+import Reports from "../components/Reports";
+import Clients from "../components/Clients";
+import Bills from "../components/Bills";
 
 export const links = [
     {
         id: 1,
         icon: React.createElement(MdOutlineDashboardCustomize),
         content: 'Dashboard',
+        component:<Dashboard/>,
         to: "/"
     },
     {
         id: 2,
         icon: React.createElement(FaChartPie),
         content: 'Reports',
+        component:<Reports/>,
         to: "/reports"
     },
     {
         id: 3,
         icon: React.createElement(FaUser),
         content: 'Clients',
+        component:<Clients/>,
         to: "/clients"
     }, 
     {
         id: 4,
         icon: React.createElement(FaMoneyBill),
         content: 'Bills',
+        component:<Bills/>,
         to: "/bills"
     }
 ]

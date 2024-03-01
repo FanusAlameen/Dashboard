@@ -1,16 +1,19 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const ReusableLi = ({icon, content, to, sidebar}) => {
 
   return (
-    <li className="list">
+   <NavLink to={to}>
+     <li className="list">
         <div className="nav-button">
             {icon}
         </div>
         <p className={sidebar ? "sidebar-collapse" : "paragraph-light"}> {/*To be hidden*/}
             {content}
         </p>
-    </li>
+      </li>
+   </NavLink>
   )
 }
 

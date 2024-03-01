@@ -1,13 +1,17 @@
-import { useState } from "react";
 import { TfiControlSkipBackward, TfiControlSkipForward } from "react-icons/tfi";
 import {links} from '../data/index.js'
 import ReusableLi from "../reusables/ReusableLi.jsx";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
-const Sidebar = () => {
-    const [sidebar, setSidebar] = useState(false)
-
+const Sidebar = ({sidebar,setSidebar}) => {
+    const location = useLocation();
+    const [activeRoute,setActiveRoute]=useState(null);
+    useEffect(()=>{
+        setActiveRoute(location.pathname);
+    },[location.pathname])
   return (
-    <aside className={sidebar ? "h-full w-1/13 p-5 bg-blue border-gray fixed" : "h-full w-1/6 p-5 bg-blue border-gray fixed"}> {/* w-1/13 */}
+    <aside className={"h-full w-100 p-5 bg-blue border-gray"}>
         <nav className="w-full h-full flex flex-col
         justify-between">
             <div className="flex flex-row 
