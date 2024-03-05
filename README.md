@@ -48,5 +48,4 @@ To get a local copy up and running, follow these steps:
 ## Acknowledgements
 
 - [Create React App](https://create-react-app.dev/) - React project boilerplate
-- [Heroicons](https://heroicons.com/) - Icons used in the project
-```
+- [React Icons](https://react-icons.github.io/react-icons/) - Icons used in the project
