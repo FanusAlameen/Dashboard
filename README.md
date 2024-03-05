@@ -47,5 +47,5 @@ To get a local copy up and running, follow these steps:
 
 ## Acknowledgements
 
-- [Create React App](https://create-react-app.dev/) - React project boilerplate
+- [Create Vite](https://tailwindcss.com/docs/guides/vite) - React project boilerplate
 - [React Icons](https://react-icons.github.io/react-icons/) - Icons used in the project
