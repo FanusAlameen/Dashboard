@@ -1,12 +1,8 @@
 import { useState } from "react";
-import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import { links } from "./data";
-import { links } from "./data";
 
-const App=()=>{
-  const [sidebar, setSidebar] = useState(false);
 const App = () => {
   const [sidebar, setSidebar] = useState(false);
 
