@@ -23,21 +23,14 @@
 
     .active {
         @apply rounded-sm
-        text-white text-xl p-2 
-        bg-gray;
+        text-white text-xl p-2 bg-gray;
     }
 
     .list {
-        @apply flex flex-row justify-center
-        items-center gap-2 p-2 text-lg bg-blue
+        @apply flex flex-row justify-start 
+        items-center gap-2 p-2 text-lg bg-gray
         rounded-sm cursor-pointer transition ease-in-out 
         duration-100 delay-100 hover:bg-gray;
-    }
-
-    .active-list {
-        @apply flex flex-row justify-center
-        items-center gap-2 p-2 text-lg bg-gray
-        rounded-sm cursor-pointer;
     }
 
     .paragraph-light, .paragraph-dark {
@@ -51,5 +44,15 @@
 
     .sidebar-collapse {
         @apply hidden
+    }
+
+    .export-btn {
+        @apply flex flex-row 
+        items-center gap-2 content-button
+    }
+
+    .content-button {
+        @apply p-2 paragraph-light 
+        bg-blue rounded-md shadow-md hover:bg-gray
     }
 }

@@ -1,27 +1,26 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard"
-import Reports from "./components/Reports";
-import Clients from "./components/Clients";
-import Bills from "./components/Bills";
+import { links } from "./data";
 
-function App() {
+const App = () => {
+  const [sidebar, setSidebar] = useState(false);
 
   return (
-    <>
-     <Sidebar />
-
-     <div className="flex flex-col">
-          <BrowserRouter>
-           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/clients" element={<Clients />} />
-            <Route path="/bills" element={<Bills />} />
-           </Routes>
-          </BrowserRouter>
-      </div>
-    </>
+    <div className="flex flex-row min-h-screen">
+      <BrowserRouter>
+       <div className={sidebar ? "w-1/13 bg-lightgray" : "w-1/6 bg-lightgray"}>
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+       </div>
+       <div className="w-full">
+        <Routes>
+        {links.map((linkContent,index)=>{
+              return <Route exact={linkContent?.exact || false} path={linkContent?.to || "/"} element={linkContent.component} />
+        })}
+        </Routes>
+       </div>
+      </BrowserRouter>
+    </div>
   )
 }
 

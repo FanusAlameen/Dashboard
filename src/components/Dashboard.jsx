@@ -6,12 +6,14 @@ import { cards } from "../data"
 const Dashboard = () => {
   return (
     <div className="bg-lightgray h-full
-     py-6 px-10 flex flex-col gap-8 items-start overflow-y-scroll">
+     py-6 px-10 flex flex-col gap-8 items-start overflow-y-scroll overflow-x-hidden">
       <h1 className="main-heading-dark 
       mt-1"
       >
         Revenue Dashboard
       </h1>
+
+      <hr className="w-full border border-lightblue" />
 
       <div className="w-full flex flex-row flex-wrap items-start gap-8">
         {cards.map(card => (
