@@ -4,7 +4,7 @@ This project is a simple dashboard built using React, Tailwind CSS, and Recharts
 
 ## Features
 
-- Responsive design using Tailwind CSS
+- Designed this using Tailwind CSS
 - Data visualization using Recharts
 - Easy-to-understand dashboard layout
 
@@ -22,13 +22,13 @@ To get a local copy up and running, follow these steps:
 
    ```sh
    cd your-project
-   npm install
+   npm install vite --save-dev
    ```
 
 3. Start the development server:
 
    ```sh
-   npm start
+   npm run dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
@@ -44,6 +44,7 @@ To get a local copy up and running, follow these steps:
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [Recharts](https://recharts.org/) - Charting library for React
+- [React-Leaflet](https://react-leaflet.js.org/) - Geography Map library for React
 
 ## Acknowledgements
 
