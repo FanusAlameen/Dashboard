@@ -6,6 +6,7 @@ This project is a simple dashboard built using React, Tailwind CSS, and Recharts
 
 - Designed this using Tailwind CSS
 - Data visualization using Recharts
+- Geo-Location Statistical data using React Leaflet
 - Easy-to-understand dashboard layout
 
 ## Getting Started
