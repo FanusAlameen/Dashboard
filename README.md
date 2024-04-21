@@ -2,6 +2,9 @@
 
 This project is a simple dashboard built using React, Tailwind CSS, and Recharts. It provides a visual representation of data using various charts and graphs.
 
+## Live Demo
+check out the live demo here - [Dashboard](https://dashboard-nu-cyan-26.vercel.app/)
+
 ## Features
 
 - Designed this using Tailwind CSS
